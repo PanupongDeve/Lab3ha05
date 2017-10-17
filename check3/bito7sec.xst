@@ -1,0 +1,5 @@
+set -tmpdir "D:/LAB3SA05/check3/xst/projnav.tmp"
+set -xsthdpdir "D:/LAB3SA05/check3/xst"
+elaborate
+-ifn bito7sec.prj
+-ifmt mixed

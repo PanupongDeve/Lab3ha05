@@ -1,0 +1,75 @@
+
+****** PlanAhead v13.4
+  **** Build 157570 by hdbuild on Fri Dec 16 12:55:36 MST 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Device-25] Loading parts and site information from C:/Xilinx/13.4/ISE_DS/PlanAhead\parts\arch.xmlParsing RTL primitives file [C:/Xilinx/13.4/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/13.4/ISE_DS/PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source D:/LAB3SA05/check3/pa.fromNetlist.tcl
+# create_project -name check3 -dir "D:/LAB3SA05/check3/planAhead_run_1" -part xc3s200tq144-4
+Parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:/Xilinx/13.4/ISE_DS/ISE\data\projnav\templates\ucf.xml].
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/LAB3SA05/check3/bito7.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/LAB3SA05/check3} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "bito7sec.ucf" [current_fileset -constrset]
+Adding file 'D:\LAB3SA05\check3\bito7sec.ucf' to fileset 'constrs_1'
+# add_files [list {bito7sec.ucf}] -fileset [get_property constrset [current_run]]
+# open_netlist_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to part: xc3s200tq144-4
+Release 13.4 - ngc2edif O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.4 - ngc2edif O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design bito7.ngc ...
+WARNING:NetListWriters:298 - No output is written to bito7.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file bito7.edif ...
+ngc2edif: Total memory usage is 60600 kilobytes
+
+Parsing EDIF File [.\planAhead_run_1\check3.data\cache\bito7_ngc_27b7e982.edif]
+Finished Parsing EDIF File [.\planAhead_run_1\check3.data\cache\bito7_ngc_27b7e982.edif]
+INFO: [PlanAhead-430] Reading macro library C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3/hd_int_macros.edn]
+Finished Parsing EDIF File [C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3/hd_int_macros.edn]
+Loading clock regions from C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/xc3s200/ClockRegion.xml
+Loading clock buffers from C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/xc3s200/ClockBuffers.xml
+Loading package from C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/xc3s200/tq144/Package.xml
+Loading io standards from C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3/IOStandards.xml
+INFO: [Device-19] Loading pkg sso from C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/xc3s200/tq144/SSORules.xml
+Loading list of drcs for the architecture : C:/Xilinx/13.4/ISE_DS/PlanAhead\./parts/xilinx/spartan3/drc.xml
+INFO: [Timing-77] Reading timing library C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/spartan3-4.lib.
+INFO: [Timing-34] Done reading timing library C:/Xilinx/13.4/ISE_DS/PlanAhead\parts/xilinx/spartan3/spartan3/spartan3-4.lib.
+Parsing UCF File [D:\LAB3SA05\check3\bito7sec.ucf]
+Finished Parsing UCF File [D:\LAB3SA05\check3\bito7sec.ucf]
+INFO: [Designutils-20] Invalid constraints found, use command 'write_ucf -constraints invalid <file>' to save all the invalid constraints to a file
+INFO: [PlanAhead-566] Unisim Transformation Summary:
+No Unisim elements were transformed.open_netlist_design: Time (s): 5.914w.  Memory (MB): 405.109p 51.086g
+startgroup
+startgroup
+set_property loc PAD13 [get_ports {o[6]}]
+set_property loc PAD13 [get_ports {o[6]}]
+endgroup
+endgroup
+startgroup
+startgroup
+set_property loc PAD188 [get_ports {o[7]}]
+set_property loc PAD188 [get_ports {o[7]}]
+endgroup
+endgroup
+save_design

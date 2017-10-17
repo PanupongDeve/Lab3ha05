@@ -1,0 +1,8 @@
+Release 13.4 Drc O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Oct 17 11:36:34 2017
+
+drc -z bito7sec.ncd bito7sec.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/LAB3SA05/check3/bito7sec.xst" -ofn "D:/LAB3SA05/check3/bito7sec.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-tq144-4 bito7sec.ngc bito7sec.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o bito7sec_map.ncd bito7sec.ngd bito7sec.pcf 
+par -w -intstyle ise -ol high -t 1 bito7sec_map.ncd bito7sec.ncd bito7sec.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml bito7sec.twx bito7sec.ncd -o bito7sec.twr bito7sec.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bito7sec.ucf -p xc3s200-tq144-4 bito7sec.ngc bito7sec.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o bito7sec_map.ncd bito7sec.ngd bito7sec.pcf 
+par -w -intstyle ise -ol high -t 1 bito7sec_map.ncd bito7sec.ncd bito7sec.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml bito7sec.twx bito7sec.ncd -o bito7sec.twr bito7sec.pcf -ucf bito7sec.ucf 
+bitgen -intstyle ise -f bito7sec.ut bito7sec.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bito7sec.ucf -p xc3s200-tq144-4 bito7sec.ngc bito7sec.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc bito7sec.ucf -p xc3s200-tq144-4 bito7sec.ngc bito7sec.ngd  
