@@ -1,0 +1,24 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "a[0]" LOC = P25;
+NET "a[1]" LOC = P24;
+NET "a[2]" LOC = P23;
+NET "a[3]" LOC = P21;
+NET "b[0]" LOC = P20;
+NET "b[1]" LOC = P18;
+NET "b[2]" LOC = P17;
+NET "b[3]" LOC = P15;
+NET "c[0]" LOC = P35;
+NET "c[1]" LOC = P33;
+NET "c[2]" LOC = P32;
+NET "c[3]" LOC = P31;
+NET "c[4]" LOC = P30;
+
+# PlanAhead Generated IO constraints 
+
+NET "a[0]" SLEW = SLOW;
+NET "a[1]" SLEW = SLOW;
+NET "a[2]" SLEW = SLOW;
+NET "a[3]" SLEW = SLOW;
+NET "b[3]" SLEW = SLOW;

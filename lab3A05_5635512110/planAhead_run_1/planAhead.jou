@@ -1,0 +1,71 @@
+#-----------------------------------------------------------
+# PlanAhead v13.4
+# Build 157570 by hdbuild on Fri Dec 16 12:55:36 MST 2011
+# Start of session at: Tue Oct 17 09:50:10 2017
+# Process ID: 3876
+# Log file: D:/lab3A05_5635512110/planAhead_run_1/planAhead.log
+# Journal file: D:/lab3A05_5635512110/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/lab3A05_5635512110/pa.fromHdl.tcl
+set_property loc "" [get_ports [list  {a[2]}]]
+set_property loc "" [get_ports [list  {a[0]}]]
+startgroup
+set_property loc PAD164 [get_ports {a[0]}]
+endgroup
+startgroup
+set_property loc PAD165 [get_ports {a[1]}]
+endgroup
+startgroup
+set_property loc PAD166 [get_ports {a[2]}]
+endgroup
+startgroup
+set_property loc PAD158 [get_ports {a[3]}]
+endgroup
+set_property PULLUP 1 [get_ports [list {a[0]}]]
+startgroup
+set_property loc PAD172 [get_ports {b[0]}]
+endgroup
+startgroup
+set_property loc PAD173 [get_ports {b[1]}]
+endgroup
+startgroup
+set_property loc PAD174 [get_ports {b[2]}]
+endgroup
+startgroup
+set_property loc PAD179 [get_ports {b[3]}]
+endgroup
+startgroup
+set_property SLEW {} [get_ports [list {b[3]}]]
+endgroup
+set_property pulltype {} [get_ports [list {a[0]}]]
+startgroup
+set_property loc PAD150 [get_ports {c[0]}]
+endgroup
+startgroup
+set_property loc PAD157 [get_ports {c[1]}]
+endgroup
+set_property loc "" [get_ports [list  {c[2]}]]
+startgroup
+set_property loc PAD171 [get_ports {a[3]}]
+endgroup
+startgroup
+set_property loc PAD158 [get_ports {c[2]}]
+endgroup
+set_property loc "" [get_ports [list  {c[4]}]]
+startgroup
+set_property loc PAD159 [get_ports {c[3]}]
+endgroup
+save_design
+startgroup
+set_property loc PAD160 [get_ports {c[4]}]
+endgroup
+startgroup
+set_property SLEW {} [get_ports [list {a[3]} {a[2]} {a[1]} {a[0]}]]
+endgroup
+startgroup
+set_property SLEW {} [get_ports [list {a[3]} {a[2]} {a[1]} {a[0]}]]
+endgroup
+save_design -force
+exit
+stop_gui
