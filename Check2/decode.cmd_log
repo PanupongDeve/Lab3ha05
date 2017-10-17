@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "D:/LAB3SA05/Check2/decode.xst" -ofn "D:/LAB3SA05/Check2/decode.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc decode.ucf -p xc3s200-tq144-4 decode.ngc decode.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o decode_map.ncd decode.ngd decode.pcf 
+par -w -intstyle ise -ol high -t 1 decode_map.ncd decode.ncd decode.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decode.twx decode.ncd -o decode.twr decode.pcf -ucf decode.ucf 
+bitgen -intstyle ise -f decode.ut decode.ncd 
+xst -intstyle ise -ifn "D:/LAB3SA05/Check2/decode.xst" -ofn "D:/LAB3SA05/Check2/decode.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc decode.ucf -p xc3s200-tq144-4 decode.ngc decode.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o decode_map.ncd decode.ngd decode.pcf 
+par -w -intstyle ise -ol high -t 1 decode_map.ncd decode.ncd decode.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml decode.twx decode.ncd -o decode.twr decode.pcf -ucf decode.ucf 
+bitgen -intstyle ise -f decode.ut decode.ncd 
